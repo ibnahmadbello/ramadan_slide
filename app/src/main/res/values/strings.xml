@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Ramadan Guide</string>
+    <string name="slide_one">Ramadan is the ninth (9th) month of the Islamic Lunar Calender</string>
+    <string name="slide_two">Ramadan is the month in which the Holy Book was revealed</string>
+    <string name="slide_three">There is a night inside Ramadan better than a
+    thousand month. It is called Layl latul Qadir (Nighth of Power)</string>
+    <string name="slide_four">Deeds done in Ramadan are rewarded in multiple fold.</string>
+    <string name="slide_five">Gates of hell is locked during Ramadan while all Gates of paradise are
+        opened.</string>
 </resources>
