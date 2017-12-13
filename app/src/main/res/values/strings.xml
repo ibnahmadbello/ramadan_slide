@@ -7,4 +7,7 @@
     <string name="slide_four">Deeds done in Ramadan are rewarded in multiple fold.</string>
     <string name="slide_five">Gates of hell is locked during Ramadan while all Gates of paradise are
         opened.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
