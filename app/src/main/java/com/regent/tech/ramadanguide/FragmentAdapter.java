@@ -9,11 +9,27 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 
 public class FragmentAdapter extends FragmentPagerAdapter {
-    public FragmentPagerAdapter(FragmentManager fm){super(fm);}
+    public FragmentAdapter(FragmentManager fm){super(fm);}
 
     @Override
     public Fragment getItem(int position){
-
+        switch (position){
+            case 0:
+                return new SlideOne();
+                break;
+            case 1:
+                return new SlideTwo();
+                break;
+            case 2:
+                return new SlideThree();
+                break;
+            case 3:
+                return new SlideFour();
+                break;
+            case 4:
+                return new SlideFive();
+                break;
+        }
     }
 
     @Override
