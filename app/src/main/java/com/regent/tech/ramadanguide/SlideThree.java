@@ -13,12 +13,6 @@ import android.view.ViewGroup;
  */
 public class SlideThree extends Fragment {
 
-
-    public SlideThree() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

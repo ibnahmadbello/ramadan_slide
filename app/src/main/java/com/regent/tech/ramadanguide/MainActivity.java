@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         //Cast the ViewPager and find it from the activity_main
         viewPager = (ViewPager) findViewById(R.id.view_pager);
 
-
+        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
     }
 }

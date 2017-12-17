@@ -12,13 +12,6 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class SlideTwo extends Fragment {
-
-
-    public SlideTwo() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

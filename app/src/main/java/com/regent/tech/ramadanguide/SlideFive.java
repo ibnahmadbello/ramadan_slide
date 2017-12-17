@@ -13,12 +13,6 @@ import android.view.ViewGroup;
  */
 public class SlideFive extends Fragment {
 
-
-    public SlideFive() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

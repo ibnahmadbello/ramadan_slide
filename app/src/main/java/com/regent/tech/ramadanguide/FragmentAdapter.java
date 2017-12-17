@@ -16,20 +16,16 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         switch (position){
             case 0:
                 return new SlideOne();
-                break;
             case 1:
                 return new SlideTwo();
-                break;
             case 2:
                 return new SlideThree();
-                break;
             case 3:
                 return new SlideFour();
-                break;
             case 4:
                 return new SlideFive();
-                break;
         }
+        return null;
     }
 
     @Override
