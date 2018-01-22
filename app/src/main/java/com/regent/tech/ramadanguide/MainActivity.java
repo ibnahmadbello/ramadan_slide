@@ -11,6 +11,11 @@ public class MainActivity extends AppCompatActivity {
 
     ViewPager viewPager;
     RadioGroup radioGroup;
+    RadioButton radioSlideOne;
+    RadioButton radioSlideTwo;
+    RadioButton radioSlideThree;
+    RadioButton radioSlideFour;
+    RadioButton radioSlideFive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
