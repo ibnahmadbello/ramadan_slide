@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
         //Cast the RadioGroup and find it from the activity_main
         radioGroup = (RadioGroup) findViewById(R.id.page_indicator);
 
+        radioSlideOne = (RadioButton) findViewById(R.id.slide_one);
+        radioSlideTwo = (RadioButton) findViewById(R.id.slide_two);
+        radioSlideThree = (RadioButton) findViewById(R.id.slide_three);
+        radioSlideFour = (RadioButton) findViewById(R.id.slide_four);
+        radioSlideFive = (RadioButton) findViewById(R.id.slide_five);
+
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
