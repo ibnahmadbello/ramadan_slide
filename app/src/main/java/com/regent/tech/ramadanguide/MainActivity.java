@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         //Cast the ViewPager and find it from the activity_main
         viewPager = (ViewPager) findViewById(R.id.view_pager);
 
+        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -51,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
         radioSlideThree = (RadioButton) findViewById(R.id.slide_three);
         radioSlideFour = (RadioButton) findViewById(R.id.slide_four);
         radioSlideFive = (RadioButton) findViewById(R.id.slide_five);
-
-        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
-        viewPager.setAdapter(adapter);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
