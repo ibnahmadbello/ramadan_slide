@@ -9,7 +9,7 @@ import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
 
-    ViewPager viewPager;
+    private ViewPager viewPager;
     RadioGroup radioGroup;
     RadioButton radioSlideOne;
     RadioButton radioSlideTwo;
@@ -24,6 +24,24 @@ public class MainActivity extends AppCompatActivity {
 
         //Cast the ViewPager and find it from the activity_main
         viewPager = (ViewPager) findViewById(R.id.view_pager);
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                radioGroup.getChildAt(position);
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
         //Cast the RadioGroup and find it from the activity_main
         radioGroup = (RadioGroup) findViewById(R.id.page_indicator);
@@ -43,18 +61,23 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case R.id.slide_one:
                         viewPager.setCurrentItem(0, true);
+                        radioSlideOne.isPressed();
                         break;
                     case R.id.slide_two:
                         viewPager.setCurrentItem(1, true);
+                        radioSlideTwo.isChecked();
                         break;
                     case R.id.slide_three:
                         viewPager.setCurrentItem(2, true);
+                        radioSlideThree.isChecked();
                         break;
                     case R.id.slide_four:
                         viewPager.setCurrentItem(3, true);
+                        radioSlideFour.isChecked();
                         break;
                     case R.id.slide_five:
                         viewPager.setCurrentItem(4, true);
+                        radioSlideFive.isChecked();
                         break;
                 }
             }
