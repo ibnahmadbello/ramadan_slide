@@ -98,9 +98,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem){
         switch (menuItem.getItemId()){
-            case R.id.skip_here:
-                Intent intent = new Intent(this, ContentActivity.class);
-                startActivity(intent);
+            case R.id.skip_now:
+                Intent skipNowIntent = new Intent(this, ContentActivity.class);
+                startActivity(skipNowIntent);
+                return true;
+            case R.id.skip_always:
+                Intent skipAlwaysIntent = new Intent(this, ContentActivity.class);
+                startActivity(skipAlwaysIntent);
                 return true;
         }
 
