@@ -3,8 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/skip_here"
+        android:id="@+id/skip_now"
         android:title="@string/skip"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/skip_always"
+        android:title="@string/skip_always"
         app:showAsAction="always"/>
 
 </menu>
